@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid of cubes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="position: absolute">
+    <div id="col"><h4>Количество снизу: 50</h4></div>
+    <input type="range" id="start" name="volume"
+           min="0" max="100" value="5"  onchange="Col()">
+    <label for="volume"> </label>
+</div>
+
+<div style="position: absolute; margin-top: 100px">
+    <div id="size"><h4>Размер: 100</h4></div>
+    <input type="range" id="cowbell" name="cowbell"
+           min="0" max="100"  value="100"  onchange="PiramideSize()">
+    <label for="cowbell"></label>
+</div>
+        <canvas id="canvas"></canvas>
+</body>
+<script src="js/lib/FBXLoader.js"></script>
+<script src="js/lib/three.min.js"></script>
+<script src="js/lib/OBJLoader.js"></script>
+<script src="js/lib/ColladaLoader.js"></script>
+<script src="js/lib/TrackballControls.js"></script>
+<script src="js/index.js"></script>
+</html>
